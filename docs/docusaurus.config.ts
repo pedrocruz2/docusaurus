@@ -3,8 +3,8 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Pedro Cruz ',
+  tagline: 'xX_ESTUDANTE_DE_ENGENHARIA_DE_COMPUTAÇÃO_Xx',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -58,10 +58,10 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'site yay ^^ ',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'https://media1.tenor.com/m/6cB00Fl1QXYAAAAd/gojo-satoru-gojo.gif',
       },
       items: [
         {
@@ -72,7 +72,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/pedrocruz2',
           label: 'GitHub',
           position: 'right',
         },
@@ -94,16 +94,16 @@ const config: Config = {
           title: 'Community',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Echosec (mlr liga da faculdade)',
+              href: 'https://echosec.com.br',
             },
             {
-              label: 'Discord',
+              label: 'Discord vai ficar pro discord do docusaurus msm',
               href: 'https://discordapp.com/invite/docusaurus',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'perfil do lol',
+              href: 'https://www.op.gg/summoners/br/crz-uwu',
             },
           ],
         },
@@ -116,12 +116,12 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/pedrocruz2',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Pedro Cruz built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -1,44 +1,52 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+name: Deploy Docusaurus
+
 on:
   push:
-    branches: [main]
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 permissions:
   contents: read
   pages: write
   id-token: write
+# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
+
 jobs:
-  deploy:
+  build:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      # 👇 Build steps
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 20.9
-      - name: move to directory
-        run: cd docs
-      - name: Install dependencies
-        run: npm install
-      - name: Build
-        run: npm run build
-      # 👆 Build steps
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          # 👇 Specify build output path
-          path: build
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: latest
+
+    - name: Install and Build
+      run: |
+        cd docs
+        npm install
+        npm run build
+        
+    - name: Setup Pages
+      uses: actions/configure-pages@v3
+        
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v2
+      with:
+        path: ./build
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v2

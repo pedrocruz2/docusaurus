@@ -10,12 +10,11 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'HACKER!',
+    Svg: require('@site/static/img/adalove.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        MEMBRO DA ECHOSEC OMG HACKING yayy <br></br>ia ser mt trampo mudar o tipo pra inserir a png que eu queria (typescript é legal mas é chato)
       </>
     ),
   },
@@ -30,12 +29,12 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'aaa vazio roxo',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        ごめんなさい、アマナイさん。私は今、あなたのことでさえ怒っていません。私は誰に対しても恨みを持ちません。ただ、世界は今、とてもとても素晴らしいと感じています。 天と地を通して、私だけが光栄な者です。
+🫸🔴🔵🫷🤌🫴
       </>
     ),
   },

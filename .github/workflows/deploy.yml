@@ -38,6 +38,7 @@ jobs:
         cd docs
         npm install
         npm run build
+        mv build ../build
         
     - name: Setup Pages
       uses: actions/configure-pages@v3
